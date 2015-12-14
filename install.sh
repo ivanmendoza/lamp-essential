@@ -1,7 +1,7 @@
 #!/bin/bash
 
 domain_name="labs.con"
-PASSWORD='labs1234'
+PASSWORD='root'
 db_name="labs_db"
 
 ### SERVER CONFIG AND PACKAGE INSTALLATION ###
