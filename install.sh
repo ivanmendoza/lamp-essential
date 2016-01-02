@@ -18,7 +18,7 @@ sudo aptitude update
 sudo aptitude -y upgrade
 
 # install apache 2.5 and php
-sudo aptitude install -q -y -f mysql-server mysql-client apache2 php5-fpm
+sudo aptitude install -q -y -f mysql-server mysql-client apache2 php5-fpm libapache2-mod-php5
 
 echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION" | mysql -u root --password=$PASSWORD
 echo "GRANT PROXY ON ''@'' TO 'root'@'%' WITH GRANT OPTION" | mysql -u root --password=$PASSWORD
