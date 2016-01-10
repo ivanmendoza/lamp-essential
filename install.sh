@@ -25,7 +25,7 @@ echo "GRANT PROXY ON ''@'' TO 'root'@'%' WITH GRANT OPTION" | mysql -u root --pa
 sed -i "s/bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" "/etc/mysql/my.cnf"
 
 # Install commonly used php packages
-sudo aptitude install -q -y -f php5-mysql php5-curl php5-gd php-pear php5-imagick php5-imap php5-mcrypt php5-memcached php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-xcache
+sudo aptitude install -q -y -f php5-mysql php5-curl php5-gd php-pear php5-imagick php5-imap php5-mcrypt php5-memcached php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-xcache php5-xdebug
 
 # install git
 sudo aptitude -y install git
