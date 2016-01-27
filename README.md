@@ -39,7 +39,7 @@ En optimización haría falta instalar y configurar APC .También configuracione
 ## Descargar los archivos de la VM e instalar los plugins requeridos de Vagrant
 
 ```
-clone https://github.com/ivanmendoza/lamp-essential.git
+git clone https://github.com/ivanmendoza/lamp-essential.git
 cd lamp-essential
 chmod +x *.sh
 ./setup-vagrant.sh
