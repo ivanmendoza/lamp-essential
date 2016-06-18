@@ -29,12 +29,6 @@ sudo cat << EOF > $vhost_file
         <Directory /var/www/$domain_name/public_html>
 				AllowOverride All
                 Options FollowSymLinks MultiViews
-				<Limit GET POST OPTIONS>
-				Require all granted
-				</Limit>
-				<LimitExcept GET POST OPTIONS>
-				Require all denied
-				</LimitExcept>
         </Directory>
 </VirtualHost>
 EOF
